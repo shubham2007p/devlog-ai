@@ -2,7 +2,7 @@ import uvicorn
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from backend.config import settings
-from backend.routes import webhook
+from backend.routes import webhook, notes
 
 app = FastAPI(
     title="DevLog AI",
@@ -19,8 +19,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Include Webhook Router
+# Include Routers
 app.include_router(webhook.router)
+app.include_router(notes.router)
 
 @app.get("/health")
 def health_check():
