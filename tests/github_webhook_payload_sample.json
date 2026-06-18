@@ -1,0 +1,87 @@
+{
+  "ref": "refs/heads/main",
+  "before": "9049f1265b7d61be4b8904a8a27120de4e2f37a2",
+  "after": "6dcb09b5b57875f334f61aebed695e2e4193db5e",
+  "repository": {
+    "id": 567890123,
+    "name": "devlog-ai",
+    "full_name": "shubham2007p/devlog-ai",
+    "private": true,
+    "owner": {
+      "name": "shubham2007p",
+      "email": "shubhampanwar1004@gmail.com"
+    },
+    "html_url": "https://github.com/shubham2007p/devlog-ai"
+  },
+  "pusher": {
+    "name": "shubham2007p",
+    "email": "shubhampanwar1004@gmail.com"
+  },
+  "sender": {
+    "login": "shubham2007p",
+    "id": 91074882
+  },
+  "created": false,
+  "deleted": false,
+  "forced": false,
+  "base_ref": null,
+  "compare": "https://github.com/shubham2007p/devlog-ai/compare/9049f1265b7d...6dcb09b5b578",
+  "commits": [
+    {
+      "id": "6dcb09b5b57875f334f61aebed695e2e4193db5e",
+      "tree_id": "a1b2c3d4e5f6g7h8i9j0a1b2c3d4e5f6g7h8i9j0",
+      "distinct": true,
+      "message": "feat: integrate github webhook processing and signature verification\n\n- Add verify_signature function in github_service\n- Parse repositories and commits from webhook payload\n- Store new commits in sqlite database\n- Prevent duplicates and create timeline evidence logs",
+      "timestamp": "2026-06-19T01:15:30+05:30",
+      "url": "https://github.com/shubham2007p/devlog-ai/commit/6dcb09b5b57875f334f61aebed695e2e4193db5e",
+      "author": {
+        "name": "Shubham Panwar",
+        "email": "shubhampanwar1004@gmail.com",
+        "username": "shubham2007p"
+      },
+      "committer": {
+        "name": "Shubham Panwar",
+        "email": "shubhampanwar1004@gmail.com",
+        "username": "shubham2007p"
+      },
+      "added": [
+        "backend/routes/webhook.py",
+        "backend/services/github_service.py"
+      ],
+      "removed": [],
+      "modified": [
+        "backend/main.py",
+        "backend/models/commits.py",
+        "backend/models/evidence.py"
+      ]
+    }
+  ],
+  "head_commit": {
+    "id": "6dcb09b5b57875f334f61aebed695e2e4193db5e",
+    "tree_id": "a1b2c3d4e5f6g7h8i9j0a1b2c3d4e5f6g7h8i9j0",
+    "distinct": true,
+    "message": "feat: integrate github webhook processing and signature verification\n\n- Add verify_signature function in github_service\n- Parse repositories and commits from webhook payload\n- Store new commits in sqlite database\n- Prevent duplicates and create timeline evidence logs",
+    "timestamp": "2026-06-19T01:15:30+05:30",
+    "url": "https://github.com/shubham2007p/devlog-ai/commit/6dcb09b5b57875f334f61aebed695e2e4193db5e",
+    "author": {
+      "name": "Shubham Panwar",
+      "email": "shubhampanwar1004@gmail.com",
+      "username": "shubham2007p"
+    },
+    "committer": {
+      "name": "Shubham Panwar",
+      "email": "shubhampanwar1004@gmail.com",
+      "username": "shubham2007p"
+    },
+    "added": [
+      "backend/routes/webhook.py",
+      "backend/services/github_service.py"
+    ],
+    "removed": [],
+    "modified": [
+      "backend/main.py",
+      "backend/models/commits.py",
+      "backend/models/evidence.py"
+    ]
+  }
+}
